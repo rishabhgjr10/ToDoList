@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your ToDo's</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Your ToDo's</div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">My Todo List</h1>
+            <p class="subtitle">Stay organized and productive</p>
+        </header>
+
+        <div class="todo-input-section">
+            <div class="input-container">
+                <input type="text" class="todo-input" placeholder="Add a new task..." maxlength="100">
+                <button class="add-btn">
+                    <span class="add-icon">+</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="todo-list-container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <ul class="todo-list">
+                <!-- Todo items will be added here -->
+            </ul>
+
+            <div class="todo-stats">
+                <span class="stats-text">0 items left</span>
+                <button class="clear-completed">Clear completed</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Rishabh Gurjar. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
